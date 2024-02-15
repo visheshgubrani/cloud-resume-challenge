@@ -17,8 +17,6 @@ fetch(lambdaUrl)
     return response.text();
   })
   .then(visitorCount => {
-
-    console.log('Visitor Count:', visitorCount);
     updateVisitorCount(visitorCount);
   })
   .catch(error => {
